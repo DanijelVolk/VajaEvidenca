@@ -1,0 +1,54 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#jumboNaslov {
+    background: linear-gradient(to right, #99ddff, #1ab2ff);
+    border-radius: 50px;
+    margin: 10px;
+}
+.stilVrste {
+    border: 1px solid #99ddff;
+    border-radius: 50px;
+    height: 150px;
+}
+#create_gumb {
+    font-size: 20px;
+    background-color: #99ddff;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+}
+.text1{
+    font-weight: bold;
+    text-align: center;
+}
+.btn_oblikovanje {
+    color: #FF0afa;
+    font-weight: bold;
+    background-color: #99ddff;
+    font-size: 20px;
+    border: 1px solid black;
+    margin: 8px;
+}

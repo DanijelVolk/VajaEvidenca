@@ -1,0 +1,87 @@
+﻿@model IEnumerable<VajaEvidenca.Models.Dijak>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p id="create_gumb">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           Ime
+        </th>
+        <th>
+           Priimek
+        </th>
+        <th>
+            Datum rojstva
+        </th>
+        <th>
+            Datum
+        </th>
+        <th>
+           Ustanova
+        </th>
+        <th>
+            Potrditev
+        </th>
+        <th>
+            Mati
+        </th>
+        <th>
+            Oče
+        </th>
+        <th>
+            ID
+        </th>
+        <th>
+            Razrednik
+        </th>
+        <th style="border-left: 1px solid black;"></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijIme)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijPriimek)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijDatumRojstva)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijIDNadDatum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijIDNadUstanova)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijIDNadPotrditev)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijMati)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DijOče)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Razredniki.RazImePriimek)
+        </td>
+        <td style="border-left: 1px solid black;">
+            <p class="text1"> @Html.ActionLink("Edit", "Edit", new { id = item.DijID })</p>
+            <p class="text1"> @Html.ActionLink("Details", "Details", new { id = item.DijID })</p>
+            <p class="text1"> @Html.ActionLink("Delete", "Delete", new { id = item.DijID })</p>
+        </td>
+    </tr>
+}
+
+</table>

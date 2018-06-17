@@ -1,0 +1,106 @@
+﻿@model VajaEvidenca.Models.Dijak
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dijak</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            IME
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijIme)
+        </dd>
+
+        <dt>
+            PRIIMEK
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijPriimek)
+        </dd>
+
+        <dt>
+            DATUM ROJSTVA
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijDatumRojstva)
+        </dd>
+
+        <dt>
+            SLIKA
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijaSlika)
+        </dd>
+
+        <dt>
+            DATUM
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijIDNadDatum)
+        </dd>
+
+        <dt>
+            USTANOVA
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijIDNadUstanova)
+        </dd>
+
+        <dt>
+            POTRDITEV
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijIDNadPotrditev)
+        </dd>
+
+        <dt>
+            MATI
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijMati)
+        </dd>
+
+        <dt>
+            OČE
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DijOče)
+        </dd>
+
+        <dt>
+            ID
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            RAZREDNIK
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Razredniki.RazImePriimek)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DijID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
